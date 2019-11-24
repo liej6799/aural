@@ -139,11 +139,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\data\\tfs\\aural_server_console\\aural_server_console_weather\\aural_server_console_weather\\aural_server_console_weather.csproj",
+      "projectUniqueName": "C:\\development\\aural\\aural_server_console\\aural_server_console_weather\\aural_server_console_weather\\aural_server_console_weather.csproj",
       "projectName": "aural_server_console_weather",
-      "projectPath": "C:\\data\\tfs\\aural_server_console\\aural_server_console_weather\\aural_server_console_weather\\aural_server_console_weather.csproj",
+      "projectPath": "C:\\development\\aural\\aural_server_console\\aural_server_console_weather\\aural_server_console_weather\\aural_server_console_weather.csproj",
       "packagesPath": "C:\\Users\\joeslie\\.nuget\\packages\\",
-      "outputPath": "C:\\data\\tfs\\aural_server_console\\aural_server_console_weather\\aural_server_console_weather\\obj\\",
+      "outputPath": "C:\\development\\aural\\aural_server_console\\aural_server_console_weather\\aural_server_console_weather\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
