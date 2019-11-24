@@ -1,0 +1,20 @@
+{
+  "API": {
+    "OpenWeatherAPI": {
+      "APIKey": "9e652959ac216be5e2e536217ec0c442",
+      "BaseOpenWeatherAPI": "https://api.openweathermap.org/data/2.5",
+      "ForecastOpenWeatherAPI": "/forecast"
+    },
+    "AuralAPI": {
+      "Server": "LocalVM",
+      "DebugVS": "http://192.168.0.135:51234/",
+      "LocalVM": "http://192.168.0.135:51234/"
+    }
+  },
+  "UserConfig": {
+    "Location": {
+      "Latitude": 3.111594884732812,
+      "Longitude": 101.63882601689716
+    }
+  }
+}

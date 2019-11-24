@@ -1,0 +1,8 @@
+C:\data\tfs\aural_library\aural_library\aural_library\bin\Debug\netcoreapp3.0\aural_library.deps.json
+C:\data\tfs\aural_library\aural_library\aural_library\bin\Debug\netcoreapp3.0\aural_library.dll
+C:\data\tfs\aural_library\aural_library\aural_library\bin\Debug\netcoreapp3.0\aural_library.pdb
+C:\data\tfs\aural_library\aural_library\aural_library\obj\Debug\netcoreapp3.0\aural_library.csprojAssemblyReference.cache
+C:\data\tfs\aural_library\aural_library\aural_library\obj\Debug\netcoreapp3.0\aural_library.AssemblyInfoInputs.cache
+C:\data\tfs\aural_library\aural_library\aural_library\obj\Debug\netcoreapp3.0\aural_library.AssemblyInfo.cs
+C:\data\tfs\aural_library\aural_library\aural_library\obj\Debug\netcoreapp3.0\aural_library.dll
+C:\data\tfs\aural_library\aural_library\aural_library\obj\Debug\netcoreapp3.0\aural_library.pdb
