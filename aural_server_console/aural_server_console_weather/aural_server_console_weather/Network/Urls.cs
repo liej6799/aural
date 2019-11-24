@@ -68,5 +68,13 @@ namespace aural_server_console_weather.Network
                 .AppendPathSegment(BaseParameters)
                 .AppendPathSegment(setInsertWeatherData);
         }
+
+        public string SetInsertCity()
+        {
+            string setInsertCity = "SetInsertCity";
+            return BaseURL
+                .AppendPathSegment(BaseParameters)
+                .AppendPathSegment(setInsertCity);
+        }
     }
 }

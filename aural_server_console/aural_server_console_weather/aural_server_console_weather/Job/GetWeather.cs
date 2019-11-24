@@ -1,4 +1,5 @@
-﻿using aural_server_console_weather.Network;
+﻿using aural_library.Model.Api;
+using aural_server_console_weather.Network;
 using aural_server_console_weather.Network.Handler;
 using FluentScheduler;
 using System;
@@ -13,7 +14,11 @@ namespace aural_server_console_weather.Job
         {
             if (new CheckAvailability(new Urls().CheckAvailability()).Execute().isSuccess)
             {
-                new SetInsertWeatherData(new Urls().SetInsertWeatherData()).Execute(new GetWeatherHourlyNetwork(new Urls().GetWeatherData()).Execute().GetWeatherDataModel);
+                GetWeatherDataModel.Base getWeatherDataModelBase = new GetWeatherHourlyNetwork(new Urls().GetWeatherData()).Execute();
+                SetInsertCity setInsertCity = new SetInsertCity(new Urls().SetInsertCity());
+
+                setInsertCity.ConvertToObject(getWeatherDataModelBase.GetWeatherDataModel.city);
+                setInsertCity.Execute();
             }
             else
             {

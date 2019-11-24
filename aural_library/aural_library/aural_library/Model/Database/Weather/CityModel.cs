@@ -12,6 +12,9 @@ namespace aural_library.Model.Database.Weather
         [ConcurrencyCheck]
         public int CityId { get; set; }
         [Required]
+        [ConcurrencyCheck]
+        public int CityAPIId { get; set; }
+        [Required]
         [MaxLength(50)]
         [ConcurrencyCheck]
         public string CityName { get; set; }

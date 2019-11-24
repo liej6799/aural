@@ -20,8 +20,7 @@
 
   <ItemGroup>
     <Reference Include="aural_library">
-
-      <HintPath>..\..\..\..\tfs\aural_library\aural_library\aural_library\bin\Debug\netcoreapp3.0\aural_library.dll</HintPath>
+      <HintPath>..\..\aural_library\aural_library\aural_library\bin\Debug\netcoreapp3.0\aural_library.dll</HintPath>
     </Reference>
   </ItemGroup>
 

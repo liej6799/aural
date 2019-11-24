@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using aural_library.Model.Api;
+using aural_library.Model.Database.Weather;
 using aural_server_api.Database;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -28,12 +29,16 @@ namespace aural_server_api.Controllers
             };
         }
 
-        [HttpPost("SetInsertWeatherData")]
-        public ActionResult<BaseApiModel.BaseApi> SetInsertWeatherData(GetWeatherDataModel.RootObject getWeatherDataModel)
+        [HttpPost("SetInsertCity")]
+        public ActionResult<BaseApiModel.BaseApi> SetInsertCity(CityModel cityModel)
         {
             if (ModelState.IsValid)
             {
-                //_weatherDatabase.SetInsertUpdateCity(getWeatherDataModel.city);
+                if (!weatherDatabaseContext.CityModels.Any(x => x.CityAPIId == cityModel.CityAPIId))
+                {
+                    weatherDatabaseContext.Add(cityModel);
+                    weatherDatabaseContext.SaveChanges();
+                }
             }
 
             return new BaseApiModel.BaseApi()

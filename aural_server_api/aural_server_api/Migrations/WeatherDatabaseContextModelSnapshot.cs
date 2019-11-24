@@ -26,6 +26,10 @@ namespace aural_server_api.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("CityAPIId")
+                        .IsConcurrencyToken()
+                        .HasColumnType("int");
+
                     b.Property<string>("CityName")
                         .IsConcurrencyToken()
                         .IsRequired()
