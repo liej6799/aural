@@ -39,6 +39,12 @@ namespace aural_server_api.Controllers
                     weatherDatabaseContext.Add(cityModel);
                     weatherDatabaseContext.SaveChanges();
                 }
+
+                return new BaseApiModel.BaseApi()
+                {
+                    isSuccess = true,
+                    description = "Weather Service is Online."
+                };
             }
 
             return new BaseApiModel.BaseApi()
@@ -46,6 +52,8 @@ namespace aural_server_api.Controllers
                 isSuccess = true,
                 description = "Weather Service is Online."
             };
+
+
         }
 
 
